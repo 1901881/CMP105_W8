@@ -2,6 +2,9 @@
 
 #include <SFML/Graphics.hpp>
 #include "Framework/Input.h"
+#include "CircleCollision.h"
+#include "Framework/Collision.h"
+#include "AABB.h"
 #include <string>
 #include <iostream>
 
@@ -23,4 +26,12 @@ private:
 	// Default variables for level class.
 	sf::RenderWindow* window;
 	Input* input;
+
+	CircleCollision ball1;
+	CircleCollision ball2;
+	sf::Texture textureBall1;
+	sf::Texture textureBall2;
+
+	AABB square1;
+	AABB square2;
 };
